@@ -4,7 +4,7 @@ plugins {
     id 'org.openjfx.javafxplugin' version '0.0.12'
 }
 
-group 'kkr.paljas.tetris'
+group 'tetris'
 version = '1.0-SNAPSHOT'
 
 repositories {
@@ -26,7 +26,7 @@ test {
 }
 
 application {
-    mainClass.set('kkr.paljas.tetris.Main')
+    mainClass.set('tetris.Main')
 }
 
 java {

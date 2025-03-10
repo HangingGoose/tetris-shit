@@ -7,6 +7,9 @@ import javafx.stage.StageStyle;
 import tetris.presenter.Presenter;
 import tetris.view.View;
 
+import java.net.URL;
+import java.util.Objects;
+
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
@@ -16,11 +19,10 @@ public class Main extends Application {
         Scene scene = new Scene(view);
 
         stage.setTitle("Kkr Tetris");
-        stage.setMaximized(true);
-        stage.setResizable(false);
-        stage.initStyle(StageStyle.DECORATED);
-        stage.setMinWidth(750);
-        stage.setMinHeight(500);
+
+        stage.initStyle(StageStyle.UNDECORATED);
+        stage.setWidth(750);
+        stage.setHeight(750);
         stage.setScene(scene);
         stage.show();
     }
